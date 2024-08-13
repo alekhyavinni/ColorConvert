@@ -49,7 +49,13 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-// Function to extract color name from the model's response
+// Function to extract color name and mood from the model's response
 function extractColorName(text) {
-   return text;
+    const colorNameMatch = text.match(/(\w+) is associated with the mood: (\w+)/i);
+    if (colorNameMatch) {
+      const colorName = colorNameMatch[1].toUpperCase();
+      const mood = colorNameMatch[2].toUpperCase();
+      return `${colorName} is associated with the mood: ${mood}`;
+    }
+    return 'UNKNOWN COLOR AND MOOD';
 }

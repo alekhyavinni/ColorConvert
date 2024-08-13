@@ -42,6 +42,17 @@ function App() {
         setFetchTrigger(true); // Set the trigger to true to start the fetch
     };
 
+    
+    const handleInputChange = (e) => {
+      const value = e.target.value;
+      setHexCode(value);
+
+      // Clear the result if the input is empty
+      if (!value) {
+          setColorName('');
+      }
+  };
+
     return (
         <div className="App">
             <header className="App-header">
@@ -50,15 +61,15 @@ function App() {
                     <input
                         type="text"
                         value={hexCode}
-                        onChange={(e) => setHexCode(e.target.value)}
+                        onChange={handleInputChange} // Updated to use handleInputChange
                         placeholder="#FFFFFF"
                     />
                     <button type="submit">Convert</button>
                 </form>
                 {error && <p className="error">{error}</p>}
                 {colorName && (
-                    <div style={{ backgroundColor: hexCode, padding: '20px', color: '#FFF' }}>
-                        <h2>{colorName}</h2>
+                    <div style={{ backgroundColor:"white", padding: '20px', color: '#FFF' }}>
+                        <h2 style={{ color: hexCode , fontSize:'22px' ,fontFamily: 'Georgia'}}>{colorName}</h2>
                     </div>
                 )}
             </header>

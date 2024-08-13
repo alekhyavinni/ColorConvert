@@ -6,7 +6,6 @@
     <img src="https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white" />
     <img src="https://img.shields.io/badge/-Express.js-000000?style=flat&logo=express&logoColor=white" />
     <img src="https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=white" />
-    <img src="https://img.shields.io/badge/-Axios-5A29E4?style=flat&logo=axios&logoColor=white" />
     <img src="https://img.shields.io/badge/-Google%20Generative%20AI-4285F4?style=flat&logo=google&logoColor=white" />
     <img src="https://img.shields.io/badge/-Dotenv-ECD53F?style=flat&logo=dotenv&logoColor=black" />
     <img src="https://img.shields.io/badge/-CORS-00A98F?style=flat&logoColor=white" />
@@ -26,7 +25,7 @@ AI Integration: Utilizes Google Generative AI for interpreting hex codes and det
 
 ## Dependencies:
 ```
-npm install cors dotenv express nodemon
+npm install cors dotenv express 
 npm install @google/generative-ai
 
 ```
@@ -41,3 +40,23 @@ Start the server
 node server.js
 ```
 
+# Usage
+```
+GIVEN a Hex Color Code Convertor Web Application
+WHEN we load the application
+THEN we are presented with an input field to enter a hex code and a "Convert" button
+AND the user can input a hex code and click "Convert"
+THEN the application displays the corresponding color name and the associated mood
+AND the output text color dynamically changes to match the hex code color provided.
+
+```
+![alt text](./client/public/media/apppic.png)
+
+# Contributor
+
+Alekhya Erikipati ©2024 All Rights Reserved.
+
+
+# License
+
+This project is licensed under the terms of the MIT license.

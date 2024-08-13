@@ -1,8 +1,9 @@
 
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: Georgia, 'Times New Roman', Times, serif,
     monospace;
+    font-size: 22px;
 }
 
 body, html {
