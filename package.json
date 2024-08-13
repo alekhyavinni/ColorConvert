@@ -4,8 +4,8 @@
   "description": "a basic web application(React and Node.js ) to Convert hex code to an English color name using an LLM API Gemini",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+   
   },
   "keywords": [],
   "author": "",
@@ -14,8 +14,7 @@
     "@google/generative-ai": "^0.16.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "nodemon": "^3.1.4",
-    "react": "^18.3.1"
+    "nodemon": "^3.1.4"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
