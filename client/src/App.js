@@ -4,7 +4,6 @@ import "./App.css";
 function App() {
     const [hexCode, setHexCode] = React.useState('');
     const [colorName, setColorName] = React.useState('');
-    const [mood, setMood] = React.useState('');
     const [error, setError] = React.useState('');
     const [fetchTrigger, setFetchTrigger] = React.useState(false); // Trigger state
 
@@ -26,7 +25,6 @@ function App() {
 
                     const data = await response.json();
                     setColorName(data.colorName);
-                    setMood(data.mood);
                     setError('');
                 } catch (err) {
                     setError('Failed to fetch the color name and mood');
@@ -61,7 +59,6 @@ function App() {
                 {colorName && (
                     <div style={{ backgroundColor: hexCode, padding: '20px', color: '#FFF' }}>
                         <h2>{colorName}</h2>
-                        <p>Mood: {mood}</p>
                     </div>
                 )}
             </header>
