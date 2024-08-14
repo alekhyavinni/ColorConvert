@@ -55,11 +55,13 @@ function App() {
       }
   };
 
+
   const handleClear = () => {
     setHexCode('');    // Clear the input field
     setColorName('');  // Clear the output
     setError('');      // Clear any errors
 };
+
 
     return (
         <div className="App">
@@ -69,7 +71,9 @@ function App() {
                     <input
                         type="text"
                         value={hexCode}
-                        onChange={handleInputChange} 
+
+                        onChange={handleInputChange} // Updated to use handleInputChange
+
                         placeholder="#FFFFFF"
                     />
 
