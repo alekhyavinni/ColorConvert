@@ -44,6 +44,7 @@ node server.js
 ```
 GIVEN a Hex Color Code Convertor Web Application
 WHEN we load the application
+THEN we are presented with an input field to enter a hex code , a "Convert" button and a "Clear" button
 THEN we are presented with an input field to enter a hex code and a "Convert" button
 AND the user can input a hex code and click "Convert"
 THEN the application displays the corresponding color name and the associated mood

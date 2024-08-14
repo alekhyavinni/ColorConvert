@@ -1,3 +1,5 @@
+// @alekhyaerikipati
+
 import React from "react";
 import "./App.css";
 
@@ -53,6 +55,14 @@ function App() {
       }
   };
 
+
+  const handleClear = () => {
+    setHexCode('');    // Clear the input field
+    setColorName('');  // Clear the output
+    setError('');      // Clear any errors
+};
+
+
     return (
         <div className="App">
             <header className="App-header">
@@ -61,10 +71,14 @@ function App() {
                     <input
                         type="text"
                         value={hexCode}
+
                         onChange={handleInputChange} // Updated to use handleInputChange
+
                         placeholder="#FFFFFF"
                     />
-                    <button type="submit">Convert</button>
+
+                    <button type="submit" style={{ marginLeft: '10px' }}>Convert</button>
+                    <button type="button" onClick={handleClear} style={{ marginLeft: '10px' }}>Clear</button>
                 </form>
                 {error && <p className="error">{error}</p>}
                 {colorName && (
