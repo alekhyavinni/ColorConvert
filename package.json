@@ -2,24 +2,29 @@
   "name": "colorconvert",
   "version": "1.0.0",
   "description": "a basic web application(React and Node.js ) to Convert hex code to an English color name using an LLM API Gemini",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
 
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js"
-   
+    "start": "node server/server.js",
+    "build": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@google/generative-ai": "^0.16.0",
+    "@google/generative-ai": "^0.17.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.4",
+    "package-name": "^0.1.0",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@types/node": "^22.2.0",
     "dotenv": "^16.4.5",
-    "react-router-dom": "^6.26.0"
+    "react-router-dom": "^6.26.0",
+    "typescript": "^5.5.4"
   }
 }
